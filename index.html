@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Phone Camera Stream</title>
+</head>
+<body>
+  <h1>Phone Camera Stream</h1>
+
+  <button id="phoneBtn">Use Phone as Camera</button>
+  <button id="pcBtn">View on Computer</button>
+
+  <div id="phoneControls" style="display:none;">
+    <h2>Your Phone ID:</h2>
+    <h1 id="peerId">Loading...</h1>
+    <video id="phoneVideo" autoplay playsinline style="width:100%;"></video>
+  </div>
+
+  <div id="pcControls" style="display:none;">
+    <h2>Enter Phone ID:</h2>
+    <input id="targetId" placeholder="Phone Peer ID" />
+    <button id="connectBtn">Connect</button>
+    <video id="pcVideo" autoplay playsinline style="width:100%;"></video>
+  </div>
+
+  <script src="https://unpkg.com/peerjs@1.5.2/dist/peerjs.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
